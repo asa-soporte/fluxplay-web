@@ -8,7 +8,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'hud',
     description: 'Experiencia inmersiva con controles HUD táctiles flotantes de Brillo y Volumen en pantalla, carrusel horizontal inferior para cambiar de canal sin cortar el video y bloqueo contra toques accidentales.',
     badges: ['Sliders HUD de Brillo & Volumen', 'Selector Rápido de Canales', 'Bloqueo Táctil Discreto'],
-    imageUrl: '/fluxplay-01.jpg',
+    imageUrl: 'fluxplay-01.jpg',
     highlightText: 'Control de gestos vertical milimétrico para brillo (izq.) y volumen (der.) en vivo.'
   },
   {
@@ -18,7 +18,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'playlists',
     description: 'Importa listas M3U por enlace o archivo local. Organiza y filtra tus favoritos clasificados por su lista de origen, con búsqueda instantánea y badges de formato en vivo.',
     badges: ['M3U • HLS (.m3u8) • DASH', 'Favoritos por Lista de Origen', 'Búsqueda y Filtros Rápidos'],
-    imageUrl: '/fluxplay-02.jpg',
+    imageUrl: 'fluxplay-02.jpg',
     highlightText: 'Agrupación automática por país, categoría de contenido y estado de transmisión.'
   },
   {
@@ -28,7 +28,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'pip',
     description: 'Sigue viendo la transmisión en ventana flotante sobre cualquier app en segundo plano, o navega libremente por la app con el minireproductor interactivo sincronizado.',
     badges: ['Ventana Flotante PiP', 'Minireproductor Integrado', 'Cero Cortes de Audio'],
-    imageUrl: '/fluxplay-03.jpg',
+    imageUrl: 'fluxplay-03.jpg',
     highlightText: 'Transición instantánea al salir al escritorio sin cortes en el flujo de video y audio.'
   },
   {
@@ -38,7 +38,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'tv',
     description: 'Panel principal elegante con historial de vistos recientemente, conteo de canales cargados, favoritos activos y selector rápido de categorías optimizado para móvil y TV.',
     badges: ['Historial Inteligente', 'Panel de Canales Vistos', 'Optimizado Android TV & Móvil'],
-    imageUrl: '/fluxplay-04.jpg',
+    imageUrl: 'fluxplay-04.jpg',
     highlightText: 'Interfaz oscura con acentos verde neón de alto contraste y respuesta instantánea.'
   },
   {
@@ -48,7 +48,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'engine',
     description: 'Aceleración por hardware nativa MediaCodec para 4K a 60fps, búfer inteligente con perfil de Baja Latencia para directos y modo de Alta Estabilidad Anti-Cortes.',
     badges: ['Aceleración GPU MediaCodec', 'Baja Latencia (<1s)', 'Búfer Inteligente Anti-Cortes'],
-    imageUrl: '/fluxplay-05.jpg',
+    imageUrl: 'fluxplay-05.jpg',
     highlightText: 'Soporte completo para decodificación HEVC/H.265, AV1 y H.264 a 60 FPS estables.'
   },
   {
@@ -58,7 +58,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'playlists',
     description: 'Visualiza la resolución exacta (1080p, 720p, 4K), tipo de flujo (HLS m3u8, TS, MPD) y detección inteligente de estado (Online / Caído) con un solo toque.',
     badges: ['Indicador de Flujo HLS', 'Detección de Caídas', 'Selector de Calidad Automática'],
-    imageUrl: '/fluxplay-06.jpg',
+    imageUrl: 'fluxplay-06.jpg',
     highlightText: 'Etiquetas de estado en tiempo real para saber qué enlaces están operativos al instante.'
   },
   {
@@ -68,7 +68,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'playlists',
     description: 'Guía electrónica de programas (EPG) sincronizada con información detallada de emisiones en curso, próximos estrenos y temporizador de alertas.',
     badges: ['Sincronización XMLTV', 'Parrilla Horaria', 'Detalle de Programas'],
-    imageUrl: '/fluxplay-07.jpg',
+    imageUrl: 'fluxplay-07.jpg',
     highlightText: 'Exploración fluida de la guía de canales con carga anticipada de programación.'
   },
   {
@@ -78,7 +78,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'engine',
     description: 'Configuración detallada de túnel de audio, passthrough surround 5.1/7.1, relación de aspecto dinámica (16:9, 4:3, Zoom, Ajustar) y gestión de caché en memoria.',
     badges: ['Relación de Aspecto Variable', 'Passthrough Audio 5.1/7.1', 'Caché Ultrarrápida'],
-    imageUrl: '/fluxplay-08.jpg',
+    imageUrl: 'fluxplay-08.jpg',
     highlightText: 'Control total sobre el pipeline de decodificación y optimización para cada dispositivo.'
   }
 ];
