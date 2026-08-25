@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './', // <-- Fundamental para GitHub Pages
+    base: '/fluxplay-web/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
