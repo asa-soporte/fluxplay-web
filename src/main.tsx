@@ -1,5 +1,5 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
 
@@ -9,25 +9,17 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>,
 );
 
-// Register Service Worker for PWA and WebAPK installation
-if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
+// Service Worker seguro para GitHub Pages
+if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
+    const swUrl = `${import.meta.env.BASE_URL}sw.js`;
     navigator.serviceWorker
-      .register('/sw.js')
+      .register(swUrl)
       .then((registration) => {
-        console.log('Fluxplay PWA Service Worker registered:', registration.scope);
+        console.log('Fluxplay PWA Service Worker registrado:', registration.scope);
       })
       .catch((error) => {
-        console.error('Fluxplay Service Worker registration failed:', error);
+        console.warn('Fluxplay Service Worker no registrado:', error);
       });
   });
-} else if ('serviceWorker' in navigator) {
-  // Also register in dev mode for testing installability
-  window.addEventListener('load', () => {
-    navigator.serviceWorker
-      .register('/sw.js')
-      .then((reg) => console.log('Fluxplay PWA SW active:', reg.scope))
-      .catch(() => {});
-  });
 }
-
