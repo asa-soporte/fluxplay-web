@@ -1,0 +1,8 @@
+{
+  "name": "Fluxplay IPTV Android",
+  "description": "Sitio web de presentación y descarga oficial de Fluxplay IPTV para Android. Reproductor IPTV de ultra alto rendimiento 4K 60fps con modo cine HUD, aceleración hardware, listas M3U/M3U8 y soporte técnico integrado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
