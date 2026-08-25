@@ -10,7 +10,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onOpenDownload,
   onOpenScreenshots,
 }) => {
-  const coverImage = '/fluxplay-01.jpg';
+  const coverImage = 'fluxplay-01.jpg';
 
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
