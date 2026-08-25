@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDownload, onOpenSupport })
             <div className="relative w-11 h-11 rounded-2xl bg-gradient-to-br from-lime-400 via-emerald-500 to-cyan-500 p-0.5 shadow-lg shadow-lime-500/25 group-hover:shadow-lime-500/50 group-hover:scale-105 transition-all duration-300">
               <div className="w-full h-full bg-slate-950 rounded-[14px] overflow-hidden flex items-center justify-center relative">
                 <img
-                  src="/app-icon.jpg"
+                  src="app-icon.jpg"
                   alt="Fluxplay IPTV Icono Oficial"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
