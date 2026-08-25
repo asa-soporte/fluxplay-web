@@ -19,7 +19,7 @@ if ('serviceWorker' in navigator) {
         console.log('Fluxplay PWA Service Worker registrado:', registration.scope);
       })
       .catch((error) => {
-        console.warn('Fluxplay Service Worker no registrado:', error);
+        console.warn('Fluxplay Service Worker omitido:', error);
       });
   });
 }
