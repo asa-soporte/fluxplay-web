@@ -102,7 +102,7 @@ export const DownloadSection: React.FC = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
                   <div className="flex items-center space-x-3">
                     <img
-                      src="/app-icon.jpg"
+                      src="./app-icon.jpg"
                       alt="FluxPlay App Icon"
                       className="w-10 h-10 rounded-xl object-cover border border-lime-500/30"
                       referrerPolicy="no-referrer"
