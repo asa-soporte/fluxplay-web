@@ -1,15 +1,20 @@
 // Fluxplay IPTV PWA Service Worker
-const CACHE_NAME = 'fluxplay-v1.0.1';
+const CACHE_NAME = 'fluxplay-web-v3.0.0';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
   '/app-icon.jpg',
-  '/favicon.jpg',
+  '/favicon.png',
   '/pwa-icon-192.png',
   '/pwa-icon-512.png',
   '/pwa-maskable-192.png',
   '/pwa-maskable-512.png',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/icon-1024.png',
+  '/screenshot-wide.jpg',
+  '/screenshot-mobile.jpg',
   '/fluxplay-01.jpg',
   '/fluxplay-02.jpg',
   '/fluxplay-03.jpg',
@@ -23,12 +28,13 @@ const STATIC_ASSETS = [
 
 // Install Event: pre-cache critical shell assets
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(STATIC_ASSETS).catch((err) => {
-        console.warn('PWA Pre-cache partial failure:', err);
+        console.warn('PWA Pre-cache note:', err);
       });
-    }).then(() => self.skipWaiting())
+    })
   );
 });
 
@@ -45,53 +51,66 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch Event: Stale-While-Revalidate for local assets, Network-First for dynamic navigation
+// Fetch Event: Stale-while-revalidate for local assets, Network First for HTML navigation
 self.addEventListener('fetch', (event) => {
-  // Only handle GET requests
-  if (event.request.method !== 'GET') return;
-
   const url = new URL(event.request.url);
 
-  // Ignore non-http schemes (e.g., chrome-extension)
-  if (!url.protocol.startsWith('http')) return;
+  // Ignore non-GET requests & dev/Vite assets
+  if (
+    event.request.method !== 'GET' ||
+    url.pathname.includes('/@vite') ||
+    url.pathname.includes('/@fs') ||
+    url.pathname.includes('/@react-refresh')
+  ) {
+    return;
+  }
 
-  // For navigation requests, try network first, fallback to cached index.html
+  // Navigation requests (HTML)
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          if (response.ok) {
-            const responseClone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
           }
           return response;
         })
         .catch(async () => {
-          const cachedResponse = await caches.match(event.request);
-          if (cachedResponse) return cachedResponse;
-          const fallback = await caches.match('/index.html');
-          return fallback || new Response('Offline', { status: 503, statusText: 'Offline' });
+          const cached = await caches.match(event.request);
+          if (cached) return cached;
+          return caches.match('/index.html');
         })
     );
     return;
   }
 
-  // For static assets (images, fonts, scripts): Cache First / Stale While Revalidate
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      const fetchPromise = fetch(event.request)
-        .then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
-            const responseToCache = networkResponse.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, responseToCache);
-            });
-          }
-          return networkResponse;
-        })
-        .catch(() => cachedResponse);
+  // Same-origin static assets
+  if (url.origin === self.location.origin) {
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        if (cachedResponse) {
+          // Revalidate in background
+          fetch(event.request)
+            .then((networkResponse) => {
+              if (networkResponse && networkResponse.status === 200) {
+                caches.open(CACHE_NAME).then((cache) => cache.put(event.request, networkResponse));
+              }
+            })
+            .catch(() => {});
+          return cachedResponse;
+        }
 
-      return cachedResponse || fetchPromise;
-    })
-  );
+        return fetch(event.request)
+          .then((networkResponse) => {
+            if (networkResponse && networkResponse.status === 200) {
+              const clone = networkResponse.clone();
+              caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+            }
+            return networkResponse;
+          })
+          .catch(() => caches.match('/favicon.png'));
+      })
+    );
+  }
 });

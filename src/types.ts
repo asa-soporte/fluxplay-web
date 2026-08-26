@@ -50,7 +50,7 @@ export interface SupportTicket {
 export interface FaqItem {
   question: string;
   answer: string;
-  category: 'general' | 'playback' | 'lists' | 'tv';
+  category: 'general' | 'playback' | 'lists';
 }
 
 export interface StreamChannel {

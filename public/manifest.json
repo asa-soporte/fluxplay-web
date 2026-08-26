@@ -1,12 +1,12 @@
 {
-  "name": "Fluxplay IPTV - Reproductor Ultra HD",
-  "short_name": "Fluxplay",
-  "description": "Reproductor multimedia IPTV de última generación para Android. Soporte 4K HDR a 60 FPS, Aceleración GPU MediaCodec y HUD Táctil.",
-  "start_url": "/",
+  "name": "FluxPlay Web",
+  "short_name": "FluxPlay Web",
+  "description": "Reproductor multimedia FluxPlay Web IPTV de última generación. Soporte 4K HDR a 60 FPS, Aceleración GPU MediaCodec y HUD Táctil.",
   "id": "/",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "display_override": ["standalone", "minimal-ui", "window-controls-overlay", "browser"],
   "orientation": "any",
   "background_color": "#020617",
   "theme_color": "#a3e635",
@@ -36,6 +36,28 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "FluxPlay Web - Modo Escritorio y Smart TV"
+    },
+    {
+      "src": "/screenshot-mobile.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "FluxPlay Web - Modo Móvil Ultra HD"
     }
   ],
   "shortcuts": [
@@ -45,13 +67,7 @@
       "description": "Descarga la última versión de Fluxplay APK para Android",
       "url": "/#descarga",
       "icons": [{ "src": "/pwa-icon-192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Comprobar Lista M3U",
-      "short_name": "Validador",
-      "description": "Herramienta online para probar y validar listas M3U/M3U8",
-      "url": "/#herramienta",
-      "icons": [{ "src": "/pwa-icon-192.png", "sizes": "192x192" }]
     }
-  ]
+  ],
+  "prefer_related_applications": false
 }

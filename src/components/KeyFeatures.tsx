@@ -39,7 +39,7 @@ export const KeyFeatures: React.FC = () => {
           </h2>
 
           <p className="text-slate-400 text-base sm:text-lg">
-            Olvídate de los cuelgues, el desajuste de audio o las interfaces lentas. Fluxplay exprime el hardware de tu dispositivo Android al máximo.
+            Olvídate de los cuelgues, el desajuste de audio o las interfaces lentas. FluxPlay exprime el hardware de tu dispositivo Android al máximo.
           </p>
         </div>
 
@@ -114,10 +114,10 @@ export const KeyFeatures: React.FC = () => {
                 RENDIMIENTO EN NÚMEROS
               </span>
               <h3 className="text-2xl sm:text-3xl font-display font-black text-white">
-                ¿Por qué Fluxplay es más rápido que otros reproductores IPTV?
+                ¿Por qué FluxPlay es más rápido que otros reproductores IPTV?
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                A diferencia de aplicaciones basadas en webviews lentos o reproductores genéricos sin aceleración, Fluxplay utiliza llamadas directas a la API NDK de Android con decodificación asíncrona de video multihilo.
+                A diferencia de aplicaciones basadas en webviews lentos o reproductores genéricos sin aceleración, FluxPlay utiliza llamadas directas a la API NDK de Android con decodificación asíncrona de video multihilo.
               </p>
             </div>
 

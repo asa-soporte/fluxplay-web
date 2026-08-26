@@ -69,7 +69,7 @@ export const SupportSection: React.FC = () => {
 
             {/* Category Pills */}
             <div className="flex flex-wrap justify-center gap-1.5">
-              {(['all', 'general', 'lists', 'playback', 'tv'] as const).map((cat) => (
+              {(['all', 'general', 'lists', 'playback'] as const).map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveFaqCategory(cat)}
@@ -79,7 +79,7 @@ export const SupportSection: React.FC = () => {
                       : 'bg-slate-900/60 text-slate-400 hover:text-white border border-white/5'
                   }`}
                 >
-                  {cat === 'all' ? 'Todas' : cat === 'general' ? 'General' : cat === 'lists' ? 'Listas M3U' : cat === 'playback' ? 'Reproducción 4K' : 'Android TV'}
+                  {cat === 'all' ? 'Todas' : cat === 'general' ? 'General' : cat === 'lists' ? 'Listas M3U' : 'Reproducción 4K'}
                 </button>
               ))}
             </div>

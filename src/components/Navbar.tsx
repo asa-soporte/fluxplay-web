@@ -34,13 +34,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDownload, onOpenSupport })
   }, []);
 
   const handleInstallPWA = async () => {
-    if (!deferredPrompt) return;
-    deferredPrompt.prompt();
-    const choiceResult = await deferredPrompt.userChoice;
-    if (choiceResult.outcome === 'accepted') {
-      setIsInstallable(false);
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const choiceResult = await deferredPrompt.userChoice;
+      if (choiceResult.outcome === 'accepted') {
+        setIsInstallable(false);
+      }
+      setDeferredPrompt(null);
+    } else {
+      // Direct user to instructions or section
+      const downloadEl = document.getElementById('descarga');
+      if (downloadEl) {
+        downloadEl.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-    setDeferredPrompt(null);
   };
 
   return (
@@ -58,8 +65,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDownload, onOpenSupport })
             <div className="relative w-11 h-11 rounded-2xl bg-gradient-to-br from-lime-400 via-emerald-500 to-cyan-500 p-0.5 shadow-lg shadow-lime-500/25 group-hover:shadow-lime-500/50 group-hover:scale-105 transition-all duration-300">
               <div className="w-full h-full bg-slate-950 rounded-[14px] overflow-hidden flex items-center justify-center relative">
                 <img
-                  src="app-icon.jpg"
-                  alt="Fluxplay IPTV Icono Oficial"
+                  src="/app-icon.jpg"
+                  alt="FluxPlay IPTV Icono Oficial"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -68,7 +75,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDownload, onOpenSupport })
 
             <div className="flex items-center space-x-2">
               <span className="text-xl font-display font-black tracking-tight text-white group-hover:text-lime-400 transition-colors">
-                Fluxplay
+                FluxPlay
               </span>
               <span className="px-1.5 py-0.5 text-[10px] font-mono font-bold uppercase tracking-wider bg-lime-500/20 text-lime-400 border border-lime-500/30 rounded-md">
                 PRO

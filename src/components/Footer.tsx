@@ -19,14 +19,14 @@ export const Footer: React.FC = () => {
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-lime-400 to-cyan-500 p-0.5 shadow-lg shadow-lime-500/20 overflow-hidden">
                 <img
                   src="/app-icon.jpg"
-                  alt="Fluxplay IPTV Icono"
+                  alt="FluxPlay IPTV Icono"
                   className="w-full h-full object-cover rounded-[14px]"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="text-left">
                 <div className="text-base font-display font-black text-white flex items-center space-x-2">
-                  <span>Fluxplay IPTV</span>
+                  <span>FluxPlay IPTV</span>
                   <span className="px-1.5 py-0.2 text-[9px] font-mono font-bold bg-lime-500/20 text-lime-400 rounded">
                     PRO 4K
                   </span>
@@ -38,13 +38,6 @@ export const Footer: React.FC = () => {
             <p className="text-slate-400 leading-relaxed max-w-sm mx-auto md:mx-0 text-xs">
               Reproductor multimedia de última generación para Android. Experiencia cinemática 16:9 con decodificación nativa por hardware, soporte para listas M3U/M3U8 y cero publicidad intrusiva.
             </p>
-
-            <div className="flex items-center space-x-3 pt-2 justify-center md:justify-start">
-              <span className="inline-flex items-center space-x-1.5 px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full font-mono text-[10px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>Servidores CDN 100% Online</span>
-              </span>
-            </div>
           </div>
 
           {/* Column 1: Navegación */}
@@ -137,14 +130,14 @@ export const Footer: React.FC = () => {
             <span>Aviso Legal y Descargo de Responsabilidad:</span>
           </div>
           <p className="text-[11px] text-slate-500 leading-relaxed">
-            Fluxplay IPTV es exclusivamente una herramienta de reproducción multimedia y software reproductor para el sistema operativo Android. Fluxplay NO incluye, suministra, aloja ni vende ningún tipo de contenido audiovisual, listas de canales o transmisiones protegidas por derechos de propiedad intelectual. Los usuarios son los únicos responsables de las listas de reproducción (M3U, M3U8, DASH) y flujos que decidan cargar de manera personal y privada en la aplicación.
+            FluxPlay IPTV es exclusivamente una herramienta de reproducción multimedia y software reproductor para el sistema operativo Android. FluxPlay NO incluye, suministra, aloja ni vende ningún tipo de contenido audiovisual, listas de canales o transmisiones protegidas por derechos de propiedad intelectual. Los usuarios son los únicos responsables de las listas de reproducción (M3U, M3U8, DASH) y flujos que decidan cargar de manera personal y privada en la aplicación.
           </p>
         </div>
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 text-center sm:text-left">
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1">
-            <span>© {new Date().getFullYear()} Fluxplay IPTV. Todos los derechos reservados.</span>
+            <span>© {new Date().getFullYear()} FluxPlay IPTV. Todos los derechos reservados.</span>
             <span className="hidden sm:inline">•</span>
             <span>
               Desarrollado y optimizado por{' '}

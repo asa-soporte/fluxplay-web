@@ -8,7 +8,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'hud',
     description: 'Experiencia inmersiva con controles HUD táctiles flotantes de Brillo y Volumen en pantalla, carrusel horizontal inferior para cambiar de canal sin cortar el video y bloqueo contra toques accidentales.',
     badges: ['Sliders HUD de Brillo & Volumen', 'Selector Rápido de Canales', 'Bloqueo Táctil Discreto'],
-    imageUrl: 'fluxplay-01.jpg',
+    imageUrl: '/fluxplay-01.jpg',
     highlightText: 'Control de gestos vertical milimétrico para brillo (izq.) y volumen (der.) en vivo.'
   },
   {
@@ -18,7 +18,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'playlists',
     description: 'Importa listas M3U por enlace o archivo local. Organiza y filtra tus favoritos clasificados por su lista de origen, con búsqueda instantánea y badges de formato en vivo.',
     badges: ['M3U • HLS (.m3u8) • DASH', 'Favoritos por Lista de Origen', 'Búsqueda y Filtros Rápidos'],
-    imageUrl: 'fluxplay-02.jpg',
+    imageUrl: '/fluxplay-02.jpg',
     highlightText: 'Agrupación automática por país, categoría de contenido y estado de transmisión.'
   },
   {
@@ -28,28 +28,28 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'pip',
     description: 'Sigue viendo la transmisión en ventana flotante sobre cualquier app en segundo plano, o navega libremente por la app con el minireproductor interactivo sincronizado.',
     badges: ['Ventana Flotante PiP', 'Minireproductor Integrado', 'Cero Cortes de Audio'],
-    imageUrl: 'fluxplay-03.jpg',
+    imageUrl: '/fluxplay-03.jpg',
     highlightText: 'Transición instantánea al salir al escritorio sin cortes en el flujo de video y audio.'
   },
   {
     id: 'slide-04',
-    title: 'Dashboard Principal & Panel de Control',
-    subtitle: 'Centro de Entretenimiento Fluxplay v2.8',
-    category: 'tv',
-    description: 'Panel principal elegante con historial de vistos recientemente, conteo de canales cargados, favoritos activos y selector rápido de categorías optimizado para móvil y TV.',
-    badges: ['Historial Inteligente', 'Panel de Canales Vistos', 'Optimizado Android TV & Móvil'],
-    imageUrl: 'fluxplay-04.jpg',
-    highlightText: 'Interfaz oscura con acentos verde neón de alto contraste y respuesta instantánea.'
+    title: 'Listas M3U y Favoritos por Origen',
+    subtitle: 'Biblioteca Inteligente y Organización Avanzada',
+    category: 'playlists',
+    description: 'Importa listas M3U por enlace o archivo local. Organiza y filtra tus favoritos clasificados por su lista de origen, con búsqueda instantánea y badges de formato en vivo.',
+    badges: ['M3U • HLS (.m3u8) • DASH', 'Favoritos por Lista de Origen', 'Búsqueda y Filtros Rápidos'],
+    imageUrl: '/fluxplay-04.jpg',
+    highlightText: 'Clasificación automática por proveedor y etiquetas de origen integradas.'
   },
   {
     id: 'slide-05',
-    title: 'Motor 4K y Decodificación Hardware',
-    subtitle: 'Nexus Streaming Engine [Beta 7.4]',
-    category: 'engine',
-    description: 'Aceleración por hardware nativa MediaCodec para 4K a 60fps, búfer inteligente con perfil de Baja Latencia para directos y modo de Alta Estabilidad Anti-Cortes.',
-    badges: ['Aceleración GPU MediaCodec', 'Baja Latencia (<1s)', 'Búfer Inteligente Anti-Cortes'],
-    imageUrl: 'fluxplay-05.jpg',
-    highlightText: 'Soporte completo para decodificación HEVC/H.265, AV1 y H.264 a 60 FPS estables.'
+    title: 'Ventana Flotante y Minireproductor',
+    subtitle: 'Multitarea PiP y Reproducción en Segundo Plano',
+    category: 'pip',
+    description: 'Sigue viendo la transmisión en ventana flotante sobre cualquier app en segundo plano, o navega libremente por la app con el minireproductor interactivo sincronizado.',
+    badges: ['Ventana Flotante PiP', 'Minireproductor Integrado', 'Sincronización Automática'],
+    imageUrl: '/fluxplay-05.jpg',
+    highlightText: 'Control total de reproducción, volumen y pantalla completa desde el minireproductor.'
   },
   {
     id: 'slide-06',
@@ -58,7 +58,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'playlists',
     description: 'Visualiza la resolución exacta (1080p, 720p, 4K), tipo de flujo (HLS m3u8, TS, MPD) y detección inteligente de estado (Online / Caído) con un solo toque.',
     badges: ['Indicador de Flujo HLS', 'Detección de Caídas', 'Selector de Calidad Automática'],
-    imageUrl: 'fluxplay-06.jpg',
+    imageUrl: '/fluxplay-06.jpg',
     highlightText: 'Etiquetas de estado en tiempo real para saber qué enlaces están operativos al instante.'
   },
   {
@@ -68,7 +68,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'playlists',
     description: 'Guía electrónica de programas (EPG) sincronizada con información detallada de emisiones en curso, próximos estrenos y temporizador de alertas.',
     badges: ['Sincronización XMLTV', 'Parrilla Horaria', 'Detalle de Programas'],
-    imageUrl: 'fluxplay-07.jpg',
+    imageUrl: '/fluxplay-07.jpg',
     highlightText: 'Exploración fluida de la guía de canales con carga anticipada de programación.'
   },
   {
@@ -78,7 +78,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     category: 'engine',
     description: 'Configuración detallada de túnel de audio, passthrough surround 5.1/7.1, relación de aspecto dinámica (16:9, 4:3, Zoom, Ajustar) y gestión de caché en memoria.',
     badges: ['Relación de Aspecto Variable', 'Passthrough Audio 5.1/7.1', 'Caché Ultrarrápida'],
-    imageUrl: 'fluxplay-08.jpg',
+    imageUrl: '/fluxplay-08.jpg',
     highlightText: 'Control total sobre el pipeline de decodificación y optimización para cada dispositivo.'
   }
 ];
@@ -95,7 +95,8 @@ export const KEY_FEATURES: FeatureItem[] = [
       'Aceleración GPU directa (Snapdragon / Dimensity / Mali)',
       'Soporte nativo HEVC/H.265, AV1, VP9, H.264 y MPEG-TS',
       'Búfer anti-congelamiento con auto-recuperación de paquetes caídos',
-      'Tiempo de carga de canal menor a 800ms'
+      'Tiempo de carga de canal menor a 800ms',
+      'Reconexión y reintento automático ante microcortes de señal'
     ],
     gradient: 'from-lime-500/20 via-emerald-500/10 to-transparent'
   },
@@ -110,7 +111,8 @@ export const KEY_FEATURES: FeatureItem[] = [
       'Controles flotantes translúcidos estilo HUD espacial',
       'Carrusel inferior con miniatura y nombre de canal',
       'Bloqueo táctil de seguridad contra pulsaciones no deseadas',
-      'Aspect ratio dinámico (16:9, 4:3, 21:9, Zoom y Ajuste)'
+      'Aspect ratio dinámico (16:9, 4:3, 21:9, Zoom y Ajuste)',
+      'Historial de canales vistos recientemente para acceso rápido'
     ],
     gradient: 'from-cyan-500/20 via-blue-500/10 to-transparent'
   },
@@ -173,20 +175,6 @@ export const KEY_FEATURES: FeatureItem[] = [
       'Totalmente libre de anuncios invasivos y rastreadores'
     ],
     gradient: 'from-lime-500/20 via-teal-500/10 to-transparent'
-  },
-  {
-    id: 'feat-more-features',
-    icon: 'Sparkles',
-    title: 'Otras Características Destacadas',
-    tagline: 'Herramientas Pro Integradas',
-    description: 'Equipada con utilidades avanzadas pensadas para la máxima estabilidad: reconexión inteligente, personalización de vista y acceso veloz.',
-    badge: 'Suite Completa',
-    details: [
-      'Reconexión y reintento automático ante microcortes de señal',
-      'Historial de canales vistos recientemente para acceso rápido',
-      'Vistas personalizables en cuadrícula o lista compacta'
-    ],
-    gradient: 'from-violet-500/20 via-pink-500/10 to-transparent'
   }
 ];
 
@@ -270,13 +258,13 @@ export const DEMO_CHANNELS: StreamChannel[] = [
 export const FAQ_ITEMS: FaqItem[] = [
   {
     category: 'general',
-    question: '¿Qué es Fluxplay IPTV y qué incluye el APK?',
-    answer: 'Fluxplay IPTV es un reproductor multimedia avanzado para Android diseñado para reproducir listas de canales en formatos M3U, M3U8, DASH y XSPF. Es un reproductor de código optimizado: no incluye listas predeterminadas ni canales con copyright, permitiéndote cargar de forma privada tus propias fuentes de transmisión con la máxima calidad y fluidez.'
+    question: '¿Qué es FluxPlay IPTV y qué incluye el APK?',
+    answer: 'FluxPlay IPTV es un reproductor multimedia avanzado para Android diseñado para reproducir listas de canales en formatos M3U, M3U8, DASH y XSPF. Es un reproductor de código optimizado: no incluye listas predeterminadas ni canales con copyright, permitiéndote cargar de forma privada tus propias fuentes de transmisión con la máxima calidad y fluidez.'
   },
   {
     category: 'lists',
     question: '¿Cómo puedo importar mi lista de canales M3U o M3U8?',
-    answer: 'Es muy sencillo: abre Fluxplay en tu dispositivo Android, dirígete al botón con el icono "+" en la pantalla principal o ve a Ajustes > Añadir Lista. Puedes pegar la URL remota de tu proveedor o seleccionar un archivo .m3u/.m3u8 descargado en la memoria de tu teléfono o TV.'
+    answer: 'Es muy sencillo: abre FluxPlay en tu dispositivo Android, dirígete al botón con el icono "+" en la pantalla principal o ve a Ajustes > Añadir Lista. Puedes pegar la URL remota de tu proveedor o seleccionar un archivo .m3u/.m3u8 descargado en la memoria de tu teléfono o TV.'
   },
   {
     category: 'playback',
@@ -284,14 +272,9 @@ export const FAQ_ITEMS: FaqItem[] = [
     answer: 'La aceleración por hardware viene activada de forma predeterminada mediante nuestro Nexus Streaming Engine. Si tu dispositivo lo soporta, verás el badge verde "HW ACTIVO" en el reproductor. Puedes cambiar entre decodificación por Hardware y Software en Ajustes > Motor de Reproducción.'
   },
   {
-    category: 'tv',
-    question: '¿Es compatible con Android TV, Google TV y Fire TV Stick?',
-    answer: 'Sí, contamos con una compilación especialmente diseñada para televisores con soporte nativo para el control remoto (D-Pad), navegación por cuadrícula, arranque automático y vista panorámica 16:9.'
-  },
-  {
     category: 'playback',
     question: '¿Qué hago si un canal sufre de congelamientos o cortes periódicos?',
-    answer: 'Fluxplay incluye un perfil de "Búfer Inteligente Anti-Cortes" ajustable de 2 a 15 segundos en Ajustes de Video. Además, puedes activar el modo de reconexión automática instantánea ante pérdidas de paquetes en redes WiFi inestables.'
+    answer: 'FluxPlay incluye un perfil de "Búfer Inteligente Anti-Cortes" ajustable de 2 a 15 segundos en Ajustes de Video. Además, puedes activar el modo de reconexión automática instantánea ante pérdidas de paquetes en redes WiFi inestables.'
   },
   {
     category: 'general',

@@ -10,7 +10,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onOpenDownload,
   onOpenScreenshots,
 }) => {
-  const coverImage = 'fluxplay-01.jpg';
+  const coverImage = '/fluxplay-01.jpg';
 
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
@@ -91,7 +91,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   {/* Real screenshot image */}
                   <img 
                     src={coverImage} 
-                    alt="Fluxplay IPTV Reproductor Android" 
+                    alt="FluxPlay IPTV Reproductor Android" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />

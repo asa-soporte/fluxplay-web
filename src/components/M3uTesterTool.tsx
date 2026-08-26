@@ -74,7 +74,7 @@ export const M3uTesterTool: React.FC = () => {
             </h2>
 
             <p className="text-slate-400 text-sm leading-relaxed text-center">
-              Pega el enlace de tu lista remota (.m3u, .m3u8, Xtream o DASH) para comprobar en segundos la compatibilidad con el motor de decodificación de Fluxplay.
+              Pega el enlace de tu lista remota (.m3u, .m3u8, Xtream o DASH) para comprobar en segundos la compatibilidad con el motor de decodificación de FluxPlay.
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 pt-2">

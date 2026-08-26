@@ -103,12 +103,12 @@ export const DownloadSection: React.FC = () => {
                   <div className="flex items-center space-x-3">
                     <img
                       src="/app-icon.jpg"
-                      alt="Fluxplay App Icon"
+                      alt="FluxPlay App Icon"
                       className="w-10 h-10 rounded-xl object-cover border border-lime-500/30"
                       referrerPolicy="no-referrer"
                     />
                     <h3 className="text-3xl sm:text-4xl font-display font-black text-white">
-                      Fluxplay IPTV {release.version}
+                      FluxPlay IPTV {release.version}
                     </h3>
                   </div>
                   <span className="text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1 rounded-lg border border-white/5 self-start sm:self-center">
@@ -138,23 +138,6 @@ export const DownloadSection: React.FC = () => {
                 <div className="flex justify-between items-center p-2.5 bg-slate-900/60 rounded-xl">
                   <span className="text-slate-400">Licencia:</span>
                   <span className="text-emerald-400 font-bold">100% Gratuito / Sin Ads</span>
-                </div>
-              </div>
-
-              {/* Changelog Checklist */}
-              <div className="space-y-3">
-                <div className="text-xs font-bold text-slate-300 uppercase tracking-wider font-mono flex items-center space-x-2">
-                  <Zap className="w-4 h-4 text-lime-400" />
-                  <span>Características y Novedades Incluidas:</span>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                  {release.changelog.map((item, i) => (
-                    <div key={i} className="flex items-start space-x-2.5 p-3 bg-slate-900/50 rounded-xl border border-white/5 text-xs text-slate-200">
-                      <CheckCircle2 className="w-4 h-4 text-lime-400 flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
                 </div>
               </div>
 
@@ -215,10 +198,6 @@ export const DownloadSection: React.FC = () => {
 
                 {/* Status caption */}
                 <div className="flex flex-wrap items-center justify-center gap-4 text-[11px] text-slate-500 font-mono pt-1">
-                  <span>✓ Servidor CDN de Alta Velocidad</span>
-                  <span>•</span>
-                  <span>✓ Sin Registro Requerido</span>
-                  <span>•</span>
                   <span>✓ 100% Libre de Virus</span>
                 </div>
               </div>
@@ -235,7 +214,7 @@ export const DownloadSection: React.FC = () => {
               Guía Rápida de Instalación
             </h3>
             <p className="text-slate-400 text-sm">
-              Instala Fluxplay en tu teléfono, tablet o televisor Android en tres pasos sencillos.
+              Instala FluxPlay en tu teléfono, tablet o televisor Android en tres pasos sencillos.
             </p>
           </div>
 
@@ -258,7 +237,7 @@ export const DownloadSection: React.FC = () => {
               </div>
               <h4 className="text-base font-bold text-white mb-1.5">2. Abrir e Instalar el APK</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Abre el archivo descargado <span className="text-slate-200 font-mono text-[11px]">Fluxplay_v2.2_Pro.apk</span> desde la barra de descargas y pulsa <span className="text-lime-400 font-semibold">Instalar</span>.
+                Abre el archivo descargado <span className="text-slate-200 font-mono text-[11px]">FluxPlay_v2.2_Pro.apk</span> desde la barra de descargas y pulsa <span className="text-lime-400 font-semibold">Instalar</span>.
               </p>
             </div>
 
@@ -288,7 +267,7 @@ export const DownloadSection: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-xl font-display font-black text-white">
-                  {downloadCompleted ? '¡Descarga Completada!' : 'Descargando Fluxplay APK'}
+                  {downloadCompleted ? '¡Descarga Completada!' : 'Descargando FluxPlay APK'}
                 </h4>
                 <p className="text-xs text-lime-400 font-mono">
                   {release.version} • {release.fileSize}
@@ -322,7 +301,7 @@ export const DownloadSection: React.FC = () => {
               </div>
             ) : (
               <div className="text-xs text-slate-400 text-center font-mono">
-                Conectando con el servidor CDN ultra rápido de Fluxplay...
+                Conectando con el servidor CDN ultra rápido de FluxPlay...
               </div>
             )}
 
@@ -379,7 +358,7 @@ export const DownloadSection: React.FC = () => {
             </div>
 
             <div className="text-[11px] font-mono text-lime-400">
-              Fluxplay_v2.2_Universal.apk
+              FluxPlay_v2.2_Universal.apk
             </div>
 
             <button
