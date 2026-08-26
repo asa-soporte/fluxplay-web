@@ -65,8 +65,8 @@
       "name": "Descargar APK",
       "short_name": "Descarga",
       "description": "Descarga la última versión de Fluxplay APK para Android",
-      "url": "/#descarga",
-      "icons": [{ "src": "/pwa-icon-192.png", "sizes": "192x192" }]
+      "url": "./#descarga",
+      "icons": [{ "src": "./pwa-icon-192.png", "sizes": "192x192" }]
     }
   ],
   "prefer_related_applications": false
