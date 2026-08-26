@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center space-x-3 justify-center md:justify-start">
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-lime-400 to-cyan-500 p-0.5 shadow-lg shadow-lime-500/20 overflow-hidden">
                 <img
-                  src="/app-icon.jpg"
+                  src="./app-icon.jpg"
                   alt="FluxPlay IPTV Icono"
                   className="w-full h-full object-cover rounded-[14px]"
                   referrerPolicy="no-referrer"
