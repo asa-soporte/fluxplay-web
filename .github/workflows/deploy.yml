@@ -29,8 +29,8 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      - name: Compilar proyecto con rutas relativas
-        run: npx vite build --base=./
+      - name: Compilar proyecto con base de repositorio
+        run: npx vite build --base=/fluxplay-web/
 
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v3
