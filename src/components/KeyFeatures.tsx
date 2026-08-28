@@ -91,6 +91,10 @@ export const KeyFeatures: React.FC = () => {
                       <span>{detail}</span>
                     </div>
                   ))}
+                  <div className="flex items-start space-x-2 text-xs text-slate-400">
+                    <span className="text-lime-400 font-bold mt-0.5">•</span>
+                    <span className="tracking-widest font-bold text-slate-400">...</span>
+                  </div>
                 </div>
 
               </div>
