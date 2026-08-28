@@ -1,5 +1,5 @@
 // Fluxplay IPTV PWA Service Worker
-const CACHE_NAME = 'fluxplay-web-v3.0.0';
+const CACHE_NAME = 'fluxplay-web-v3.1.0';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -23,6 +23,8 @@ const STATIC_ASSETS = [
   '/fluxplay-06.jpg',
   '/fluxplay-07.jpg',
   '/fluxplay-08.jpg',
+  '/fluxplay-09.jpg',
+  '/fluxplay-010.jpg',
   '/fluxplay-cover.jpg'
 ];
 
