@@ -2,7 +2,7 @@ import { ScreenshotItem, FeatureItem, ApkRelease, FaqItem, StreamChannel } from 
 
 export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
   {
-    id: '/slide-01',
+    id: './slide-01',
     title: 'Reproductor Modo Cine HUD 16:9',
     subtitle: 'Controles Táctiles Flotantes de Brillo y Volumen',
     category: 'hud',
@@ -22,7 +22,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Agrupación automática por país, categoría de contenido y estado de transmisión.'
   },
   {
-    id: ',/slide-03',
+    id: './slide-03',
     title: 'Ventana Flotante y Multitarea PiP',
     subtitle: 'Picture-in-Picture & Minireproductor Integrado',
     category: 'pip',
