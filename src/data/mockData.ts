@@ -2,7 +2,7 @@ import { ScreenshotItem, FeatureItem, ApkRelease, FaqItem, StreamChannel } from 
 
 export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
   {
-    id: 'slide-01',
+    id: '/slide-01',
     title: 'Reproductor Modo Cine HUD 16:9',
     subtitle: 'Controles Táctiles Flotantes de Brillo y Volumen',
     category: 'hud',
@@ -12,7 +12,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Control de gestos vertical milimétrico para brillo (izq.) y volumen (der.) en vivo.'
   },
   {
-    id: 'slide-02',
+    id: './slide-02',
     title: 'Gestor de Listas M3U y Categorías',
     subtitle: 'Biblioteca Inteligente con Filtrado Avanzado',
     category: 'playlists',
@@ -22,7 +22,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Agrupación automática por país, categoría de contenido y estado de transmisión.'
   },
   {
-    id: 'slide-03',
+    id: ',/slide-03',
     title: 'Ventana Flotante y Multitarea PiP',
     subtitle: 'Picture-in-Picture & Minireproductor Integrado',
     category: 'pip',
@@ -32,7 +32,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Transición instantánea al salir al escritorio sin cortes en el flujo de video y audio.'
   },
   {
-    id: 'slide-04',
+    id: './slide-04',
     title: 'Listas M3U y Favoritos por Origen',
     subtitle: 'Biblioteca Inteligente y Organización Avanzada',
     category: 'playlists',
@@ -42,7 +42,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Clasificación automática por proveedor y etiquetas de origen integradas.'
   },
   {
-    id: 'slide-05',
+    id: './slide-05',
     title: 'Ventana Flotante y Minireproductor',
     subtitle: 'Multitarea PiP y Reproducción en Segundo Plano',
     category: 'pip',
@@ -52,7 +52,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Control total de reproducción, volumen y pantalla completa desde el minireproductor.'
   },
   {
-    id: 'slide-06',
+    id: './slide-06',
     title: 'Monitoreo de Estado y Resolución en Vivo',
     subtitle: 'Detección Automática de Códecs y Caídas',
     category: 'playlists',
@@ -62,7 +62,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Etiquetas de estado en tiempo real para saber qué enlaces están operativos al instante.'
   },
   {
-    id: 'slide-07',
+    id: './slide-07',
     title: 'Guía EPG y Programación en Tiempo Real',
     subtitle: 'Parrilla Horaria XMLTV con Recordatorios',
     category: 'playlists',
@@ -72,7 +72,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Exploración fluida de la guía de canales con carga anticipada de programación.'
   },
   {
-    id: 'slide-08',
+    id: './slide-08',
     title: 'Ajustes Avanzados & Motor de Renderizado',
     subtitle: 'Personalización Extrema y Modos de Búfer',
     category: 'engine',
@@ -82,7 +82,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Control total sobre el pipeline de decodificación y optimización para cada dispositivo.'
   },
   {
-    id: 'slide-09',
+    id: './slide-09',
     title: 'Grabación de Emisiones & Catch-Up TV',
     subtitle: 'Timeshift y Gestión de Grabaciones en DVR',
     category: 'engine',
@@ -92,7 +92,7 @@ export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
     highlightText: 'Captura transmisiones completas en segundo plano con compresión optimizada.'
   },
   {
-    id: 'slide-10',
+    id: './slide-10',
     title: 'Personalización Avanzada y Perfiles',
     subtitle: 'Temas OLED, Atajos y Ajustes a Medida',
     category: 'engine',
