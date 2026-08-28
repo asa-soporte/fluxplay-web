@@ -160,9 +160,8 @@ export const KEY_FEATURES: FeatureItem[] = [
     badge: 'Modo Flotante',
     details: [
       'Ventana PiP redimensionable con controles integrados',
-      'Modo solo audio en segundo plano con pantalla apagada',
-      'Minireproductor sincronizado en la parte inferior de la app',
-      'Cero interrupción al alternar entre aplicaciones'
+      'Multitarea fluida entre diferentes aplicaciones',
+      'Minireproductor sincronizado en la parte inferior de la app'
     ],
     gradient: 'from-yellow-500/20 via-amber-500/10 to-transparent'
   },
