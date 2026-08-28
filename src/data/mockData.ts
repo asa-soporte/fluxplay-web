@@ -2,103 +2,103 @@ import { ScreenshotItem, FeatureItem, ApkRelease, FaqItem, StreamChannel } from 
 
 export const SCREENSHOT_SLIDES: ScreenshotItem[] = [
   {
-    id: './slide-01',
+    id: 'slide-01',
     title: 'Reproductor Modo Cine HUD 16:9',
     subtitle: 'Controles Táctiles Flotantes de Brillo y Volumen',
     category: 'hud',
     description: 'Experiencia inmersiva con controles HUD táctiles flotantes de Brillo y Volumen en pantalla, carrusel horizontal inferior para cambiar de canal sin cortar el video y bloqueo contra toques accidentales.',
     badges: ['Sliders HUD de Brillo & Volumen', 'Selector Rápido de Canales', 'Bloqueo Táctil Discreto'],
-    imageUrl: '/fluxplay-01.jpg',
+    imageUrl: './fluxplay-01.jpg',
     highlightText: 'Control de gestos vertical milimétrico para brillo (izq.) y volumen (der.) en vivo.'
   },
   {
-    id: './slide-02',
+    id: 'slide-02',
     title: 'Gestor de Listas M3U y Categorías',
     subtitle: 'Biblioteca Inteligente con Filtrado Avanzado',
     category: 'playlists',
     description: 'Importa listas M3U por enlace o archivo local. Organiza y filtra tus favoritos clasificados por su lista de origen, con búsqueda instantánea y badges de formato en vivo.',
     badges: ['M3U • HLS (.m3u8) • DASH', 'Favoritos por Lista de Origen', 'Búsqueda y Filtros Rápidos'],
-    imageUrl: '/fluxplay-02.jpg',
+    imageUrl: './fluxplay-02.jpg',
     highlightText: 'Agrupación automática por país, categoría de contenido y estado de transmisión.'
   },
   {
-    id: './slide-03',
+    id: 'slide-03',
     title: 'Ventana Flotante y Multitarea PiP',
     subtitle: 'Picture-in-Picture & Minireproductor Integrado',
     category: 'pip',
     description: 'Sigue viendo la transmisión en ventana flotante sobre cualquier app en segundo plano, o navega libremente por la app con el minireproductor interactivo sincronizado.',
     badges: ['Ventana Flotante PiP', 'Minireproductor Integrado', 'Cero Cortes de Audio'],
-    imageUrl: '/fluxplay-03.jpg',
+    imageUrl: './fluxplay-03.jpg',
     highlightText: 'Transición instantánea al salir al escritorio sin cortes en el flujo de video y audio.'
   },
   {
-    id: './slide-04',
+    id: 'slide-04',
     title: 'Listas M3U y Favoritos por Origen',
     subtitle: 'Biblioteca Inteligente y Organización Avanzada',
     category: 'playlists',
     description: 'Importa listas M3U por enlace o archivo local. Organiza y filtra tus favoritos clasificados por su lista de origen, con búsqueda instantánea y badges de formato en vivo.',
     badges: ['M3U • HLS (.m3u8) • DASH', 'Favoritos por Lista de Origen', 'Búsqueda y Filtros Rápidos'],
-    imageUrl: '/fluxplay-04.jpg',
+    imageUrl: './fluxplay-04.jpg',
     highlightText: 'Clasificación automática por proveedor y etiquetas de origen integradas.'
   },
   {
-    id: './slide-05',
+    id: 'slide-05',
     title: 'Ventana Flotante y Minireproductor',
     subtitle: 'Multitarea PiP y Reproducción en Segundo Plano',
     category: 'pip',
     description: 'Sigue viendo la transmisión en ventana flotante sobre cualquier app en segundo plano, o navega libremente por la app con el minireproductor interactivo sincronizado.',
     badges: ['Ventana Flotante PiP', 'Minireproductor Integrado', 'Sincronización Automática'],
-    imageUrl: '/fluxplay-05.jpg',
+    imageUrl: './fluxplay-05.jpg',
     highlightText: 'Control total de reproducción, volumen y pantalla completa desde el minireproductor.'
   },
   {
-    id: './slide-06',
+    id: 'slide-06',
     title: 'Monitoreo de Estado y Resolución en Vivo',
     subtitle: 'Detección Automática de Códecs y Caídas',
     category: 'playlists',
     description: 'Visualiza la resolución exacta (1080p, 720p, 4K), tipo de flujo (HLS m3u8, TS, MPD) y detección inteligente de estado (Online / Caído) con un solo toque.',
     badges: ['Indicador de Flujo HLS', 'Detección de Caídas', 'Selector de Calidad Automática'],
-    imageUrl: '/fluxplay-06.jpg',
+    imageUrl: './fluxplay-06.jpg',
     highlightText: 'Etiquetas de estado en tiempo real para saber qué enlaces están operativos al instante.'
   },
   {
-    id: './slide-07',
+    id: 'slide-07',
     title: 'Guía EPG y Programación en Tiempo Real',
     subtitle: 'Parrilla Horaria XMLTV con Recordatorios',
     category: 'playlists',
     description: 'Guía electrónica de programas (EPG) sincronizada con información detallada de emisiones en curso, próximos estrenos y temporizador de alertas.',
     badges: ['Sincronización XMLTV', 'Parrilla Horaria', 'Detalle de Programas'],
-    imageUrl: '/fluxplay-07.jpg',
+    imageUrl: './fluxplay-07.jpg',
     highlightText: 'Exploración fluida de la guía de canales con carga anticipada de programación.'
   },
   {
-    id: './slide-08',
+    id: 'slide-08',
     title: 'Ajustes Avanzados & Motor de Renderizado',
     subtitle: 'Personalización Extrema y Modos de Búfer',
     category: 'engine',
     description: 'Configuración detallada de túnel de audio, passthrough surround 5.1/7.1, relación de aspecto dinámica (16:9, 4:3, Zoom, Ajustar) y gestión de caché en memoria.',
     badges: ['Relación de Aspecto Variable', 'Passthrough Audio 5.1/7.1', 'Caché Ultrarrápida'],
-    imageUrl: '/fluxplay-08.jpg',
+    imageUrl: './fluxplay-08.jpg',
     highlightText: 'Control total sobre el pipeline de decodificación y optimización para cada dispositivo.'
   },
   {
-    id: './slide-09',
+    id: 'slide-09',
     title: 'Grabación de Emisiones & Catch-Up TV',
     subtitle: 'Timeshift y Gestión de Grabaciones en DVR',
     category: 'engine',
     description: 'Programa grabaciones de tus eventos en vivo y accede al historial Catch-Up para reproducir transmisiones emitidas en las últimas 72 horas sin cortes.',
     badges: ['Grabación DVR Programada', 'Timeshift Retroactivo', 'Almacenamiento Local/SD'],
-    imageUrl: '/fluxplay-09.jpg',
+    imageUrl: './fluxplay-09.jpg',
     highlightText: 'Captura transmisiones completas en segundo plano con compresión optimizada.'
   },
   {
-    id: './slide-10',
+    id: 'slide-10',
     title: 'Personalización Avanzada y Perfiles',
     subtitle: 'Temas OLED, Atajos y Ajustes a Medida',
     category: 'engine',
     description: 'Ajusta la paleta de color, estilo de navegación, perfiles de búfer para conexiones lentas y atajos de teclado o mando a distancia para Android TV.',
     badges: ['Modo Puro OLED', 'Búfer Dinámico Adaptativo', 'Atajos Mando a Distancia'],
-    imageUrl: '/fluxplay-010.jpg',
+    imageUrl: './fluxplay-010.jpg',
     highlightText: 'Configuración granular del comportamiento de la app según tu dispositivo y pantalla.'
   }
 ];
