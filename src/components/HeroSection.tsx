@@ -119,7 +119,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   </div>
                   <div>
                     <div className="text-xs font-bold text-white">HW MediaCodec</div>
-                    <div className="text-[10px] text-lime-400 font-mono">0 lag en 4K 60FPS</div>
+                    <div className="text-[10px] text-lime-400 font-mono">4K 60FPS</div>
                   </div>
                 </div>
               </div>
