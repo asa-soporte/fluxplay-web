@@ -190,7 +190,7 @@ export const KEY_FEATURES: FeatureItem[] = [
     details: [
       'Navegación táctil intuitiva optimizada para gestos',
       'Modo pantalla completa para smartphones y tablets',
-      'Diseño ultra ligero: instalador de apenas ~32 MB',
+      'Diseño ultra ligero: instalador de apenas ~34 MB',
       'Totalmente libre de anuncios invasivos y rastreadores'
     ],
     gradient: 'from-lime-500/20 via-teal-500/10 to-transparent'
@@ -201,7 +201,7 @@ export const APK_RELEASES: ApkRelease[] = [
   {
     version: 'v2.2 Pro',
     releaseDate: 'Compilación Oficial Certificada',
-    fileSize: '32 MB',
+    fileSize: '34 MB',
     architecture: 'Universal (arm64-v8a • armeabi-v7a • x86_64)',
     minAndroid: 'Android 7.0 a Android 15 (Smartphones y Tablets)',
     sha256: '9f8e4b7c2a1e8d6f5a3b2c1e0d9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f',
